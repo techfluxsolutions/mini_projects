@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENQUIRY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="form-wrapper">
+            <h2>Enquiry Form</h2>
+            <form>
+                <div class="input-wrapper width-50">
+                    <input class="form-input" type="text" name="first_name" required="" />
+                    <label>First Name</label>
+                </div>
+                <div class="input-wrapper width-50">
+                    <input class="form-input" type="text" name="last_name" required="" />
+                    <label>Last Name</label>
+                </div>
+                <div class="input-wrapper width-50">
+                    <input class="form-input" type="email" name="email" required="" />
+                    <label>Email</label>
+                </div>
+                <div class="input-wrapper width-50">
+                    <input class="form-input" type="number" name="contact" required="" />
+                    <label>Contact Number</label>
+                </div>
+                <div class="input-wrapper">
+                    <input class="form-input" type="text" name="" required="" />
+                    <label>Subject</label>
+                </div>
+                <div class="input-wrapper">
+                    <input class="form-input" type="text" name="" required="" />
+                    <label>Company Name</label>
+                </div>
+                <div class="input-wrapper">
+                    <input class="form-input" type="text" name="" required="" />
+                    <label>Company Website</label>
+                </div>
+                <div class="input-wrapper">
+                    <input class="form-input" type="text" name="" required="" />
+                    <label>Message</label>
+                </div>
+                <a href="javascript:void(0)" class="btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    SUBMIT
+                </a>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).on("focusout", ".form-input", function () {
+        $(this).removeClass("active-field");
+        if ($(this).val().length > 0) {
+            $(this).addClass("active-field");
+        }
+    });
+
+    jQuery(".form-input").on("focus", function (e) {
+        $(this).addClass("active-field");
+    });
+
+</script>
+
+</html>
