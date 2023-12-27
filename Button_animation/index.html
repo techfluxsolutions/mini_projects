@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Button</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <button class="glow-on-hover" type="button" onclick="handleButtonClick(this)">
+         CLICK ME!
+    </button>
+
+    <script>
+        function handleButtonClick(button) {
+            button.classList.add('loading'); // Add loading class for styling
+
+            // Simulate a delay for loading (you can replace this with actual loading functionality)
+            setTimeout(function() {
+                button.classList.remove('loading'); // Remove loading class
+                button.innerHTML = 'DONE!'; // Change button text to "DONE!"
+
+                // Return to main form after a short delay
+                setTimeout(function() {
+                    button.innerHTML = 'HOVER ME, THEN CLICK ME!'; // Change button text back to original
+                }, 1500); // Adjust the delay time as needed
+            }, 2000); // Adjust the delay time as needed
+        }
+    </script>
+</body>
+</html>
