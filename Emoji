@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emoji</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+        }
+        button{
+            width: 100px;
+            height: 43px;
+            color: black;
+            border-radius: 10px;
+            position: relative;  
+            top: -114px;   
+            font-size: 22px;
+           }
+        button:hover{
+            background-color: yellow;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="bulb">
+        <p id="demo" style="font-size: 150px;">&#128528;</p>
+        <button onclick="document.getElementById('demo').innerHTML='&#128528;'">Sad</button>
+        <button onclick="document.getElementById('demo').innerHTML='&#128512;'">Smile</button>
+    </div>
+</body>
+</html>
