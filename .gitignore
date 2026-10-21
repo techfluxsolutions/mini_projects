@@ -4,3 +4,6 @@ temp_interactive_push.bat
 .gitignore
 
 # Editor settings stay local (a VS Code auto-run task was used to spread malware)
+
+# Editor settings stay local (a VS Code auto-run task was used to spread malware)
+.vscode/
